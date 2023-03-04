@@ -28,6 +28,7 @@ function MovieForm({ onAddMovie }) {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   }
 
+  
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" name="title" placeholder="Title" required value={formData.title} onChange={handleInputChange} />
