@@ -26,7 +26,6 @@ function MovieList() {
   // function handleLogin(query) {
   //   setMovies(movies.filter((movie) => movie.title ===query));
   // }
-
   return (
     <div className='movie'>
       <MovieForm onAddMovie={handleAddMovie} />
