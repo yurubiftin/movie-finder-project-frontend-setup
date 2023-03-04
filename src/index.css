@@ -1,0 +1,79 @@
+body{
+  background-image: url("movie.jpg");
+background-size: 1500px;
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  padding: 16px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+input {
+  margin: 8px;
+  padding: 8px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  margin: 16px 8px 8px auto;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.movie {
+  display: inline-block;
+  width: 700px;
+  margin: 10px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: bold;
+  color:whitesmoke;
+  font-size: 52px;
+}
+
+p{
+  font-weight: bold;
+  font-size: 20px;
+  color:whitesmoke;
+}
+h2{
+  font-weight: bold;
+  font-size: 25px;
+  color:whitesmoke;
+}
