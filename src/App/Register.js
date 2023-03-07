@@ -1,5 +1,6 @@
 import { useNavigate} from "react-router-dom"
 const Register = ({setIsAuthenticated}) => {
+  
     const navigate = useNavigate()
     // register user
     const handleSubmit = async (e) => {
