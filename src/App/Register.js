@@ -14,7 +14,7 @@ const Register = ({setIsAuthenticated}) => {
           });
           if (response.ok) {
             setIsAuthenticated(true);
-            navigate('/Login');
+            navigate('/MovieList');
           } else {
             const errorData = await response.json();
             console.log(errorData);
@@ -40,7 +40,6 @@ const Register = ({setIsAuthenticated}) => {
                name="name"
                placeholder="Jane Doe"
                required
-               autoComplete="off"
                />
             </div>
           </div>

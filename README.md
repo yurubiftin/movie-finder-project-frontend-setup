@@ -30,4 +30,4 @@ movie finder depends on the following libraries and tools:
 Credits
 ## Author
 This repository is maintained by:
-- [Yurub Ahmed](https://github.com/sumeyahajji)
+- [Yurub Ahmed](https://github.com/yurubiftin)

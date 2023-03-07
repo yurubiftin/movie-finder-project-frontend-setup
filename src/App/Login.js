@@ -36,7 +36,7 @@ const Login = ({setIsAuthenticated}) => {
         <h1 className="text-black-300 italic uppercase">Login</h1>
         
         <div className="flex justify-center items-center">
-      <form class="w-full max-w-sm bg-grey-500 shodow-xl rounded-xl p-5 mt-20 " noValidate no-autocomplete onSubmit={handleLogin}>
+      <form class="w-full max-w-sm bg-grey-500 shodow-xl rounded-xl p-5 mt-20 " onSubmit={handleLogin}>
             <h1 className="text-2xl text-teal-500 text-center mb-6  font-bold">login</h1>
         <div class="md:flex md:items-center mb-6">
           <div class="md:w-1/3">
