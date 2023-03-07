@@ -1,6 +1,6 @@
 import { useNavigate} from "react-router-dom"
 const Register = ({setIsAuthenticated}) => {
-  
+
     const navigate = useNavigate()
     // register user
     const handleSubmit = async (e) => {
@@ -8,13 +8,13 @@ const Register = ({setIsAuthenticated}) => {
         const form = e.target;
         const formData = new FormData(form);
         try {
-          const response = await fetch('http://127.0.0.1:9292/users', {
+          const response = await fetch('https://movie-app-0sbe.onrender.com/users', {
             method: 'POST',
             body: formData,
           });
           if (response.ok) {
             setIsAuthenticated(true);
-            navigate('/MovieList');
+            navigate('/Login');
           } else {
             const errorData = await response.json();
             console.log(errorData);
@@ -26,7 +26,7 @@ const Register = ({setIsAuthenticated}) => {
     return (
         <div className="flex justify-center items-center ">
         <form class="w-full max-w-sm bg-slate-300 shodow-xl rounded-xl p-5 mt-20 "noValidate no-autocomplete onSubmit={handleSubmit}>
-          <h1 className="text-2xl text-teal-500 text-center mb-6  font-bold">Register to Laugh</h1>
+          <h1 className="text-2xl text-teal-500 text-center mb-6  font-bold">Register to Watch</h1>
           <div class="md:flex md:items-center mb-6">
             <div class="md:w-1/3">
               <label class="block text-gray-700 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-name">

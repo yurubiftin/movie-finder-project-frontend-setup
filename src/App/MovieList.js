@@ -9,7 +9,7 @@ function MovieList() {
   
 
   useEffect(() => {
-    fetch('http://localhost:9292/movies')
+    fetch('https://movie-app-0sbe.onrender.com/movies')
       .then(res => res.json())
       .then(data => setMovies(data))
       .catch(console.error);
@@ -27,6 +27,7 @@ function MovieList() {
 
  return (
     <div>
+      <h1>Movie Finder App</h1>
       <MovieForm onAddMovie={handleAddMovie} />
       <Search onSearch={handleSearch} />
       <div className='movie-container'>

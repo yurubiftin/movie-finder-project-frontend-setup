@@ -9,8 +9,9 @@ function App() {
   return (
 
     <div>
+      
       <Routes> 
-        
+
           <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated}/>} />
           <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated}/>} />
           {isAuthenticated && (

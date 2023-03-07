@@ -1,7 +1,7 @@
 import React from "react";
 function Movie({ movie, onDeleteMovie }) {
   function handleDeleteClick() {
-    fetch(`http://localhost:9292/movies/${movie.id}`, {
+    fetch(`https://movie-app-0sbe.onrender.com/${movie.id}`, {
       method: "DELETE",
     })
       .then(() => {
@@ -18,7 +18,7 @@ function Movie({ movie, onDeleteMovie }) {
       <img src={movie.image_url} alt={movie.title} />
       <p>{movie.description}</p>
       <button onClick={handleDeleteClick}>Delete</button>
-      
+
     </div>
   );
 }
