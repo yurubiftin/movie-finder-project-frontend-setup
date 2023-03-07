@@ -22,7 +22,7 @@ function MovieList() {
     setSearchResults(searchResults.filter(movie => movie.id !== id));
   }
   function handleSearch(query) {
-    setMovies(movies.filter((movie) => movie.title.toLowerCase() === query));
+    setMovies(movies.filter((movie) => movie.title.toLowerCase() === query.toLowerCase()));
   }
 
  return (
