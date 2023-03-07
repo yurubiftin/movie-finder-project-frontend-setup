@@ -34,9 +34,12 @@ function MovieForm({ onAddMovie }) {
       <input type="text" name="title" placeholder="Title" required value={formData.title} onChange={handleInputChange} />
       <input type="text" name="description" placeholder="Description" required value={formData.description} onChange={handleInputChange} />
       <input type="text" name="image_url" placeholder="Image URL" required value={formData.image_url} onChange={handleInputChange} />
+      <input type="text" name="genre" placeholder="Genre" required value={formData.genre} onChange={handleInputChange} />
+      <input type="ineger" name="rating" placeholder="Rating" required value={formData.rating} onChange={handleInputChange} />
+
       <button type="submit">Add Movie</button>
     </form>
   );
 }
 
-export default MovieForm;
+export default MovieForm

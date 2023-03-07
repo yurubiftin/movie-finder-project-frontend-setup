@@ -1,82 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
-  background-image: url("movie.jpg");
-background-size: 1500px;
 
+  background-color: whitesmoke;
+}
 
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+p {
+  font-weight: bold;
+  font-size: 20px;
+  color: whitesmoke;
+}
+form {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 15px;
+  background-color: black;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #999;
+  display: flex;
+}
+input {
+  width: 25%;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #999;
+}
+button {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+button:hover {
+  background-color: #050705;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  background-color: rgb(88, 96, 98);
+  
+}
+.movie-card {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.movie-card h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.movie-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.movie-card button {
+  background-color: #DC3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.movie-card button:hover {
+  background-color: #C82333;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin: 16px;
-  padding: 16px;
-  background-color: #f2f2f2;
-  border-radius: 8px;
+  align-items: center;
 }
-
 
 input {
-  margin: 8px;
-  padding: 8px;
-  font-size: 16px;
-  color: #333;
+  margin: 10px 0;
+  padding: 10px;
   border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}
-
-input:focus {
-  outline: none;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
-
-
-button {
-  margin: 16px 8px 8px auto;
-  padding: 8px 16px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #0062cc;
-}
-
-button:active {
-  transform: scale(0.95);
-  box-shadow: none;
-}
-.movie {
-  display: inline-block;
-  width: 700px;
-  margin: 10px;
-}
-
-.movie img {
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: auto;
+  max-width: 500px;
+  font-size: 1rem;
 }
-
-
-h1 {
-  font-weight: bold;
-  color:whitesmoke;
-  font-size: 52px;
+button.rating{
+  background-color: green;
 }
-
-p{
-  font-weight: bold;
+h3{
   font-size: 20px;
-  color:whitesmoke;
 }
-h2{
-  font-weight: bold;
-  font-size: 25px;
-  color:whitesmoke;
+img {
+  width: 500px;
+  height: 500px;
 }
+
+
