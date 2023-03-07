@@ -18,6 +18,7 @@ function Movie({ movie, onDeleteMovie }) {
       <img src={movie.image_url} alt={movie.title} />
       <p>{movie.description}</p>
       <button onClick={handleDeleteClick}>Delete</button>
+      
     </div>
   );
 }
