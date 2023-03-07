@@ -34,6 +34,7 @@ const Login = ({setIsAuthenticated}) => {
     return (
     <div>
         <h1 className="text-yellow-300 italic uppercase">Login</h1>
+        
         <div className="flex justify-center items-center">
       <form class="w-full max-w-sm bg-pink-500 shodow-xl rounded-xl p-5 mt-20 " noValidate no-autocomplete onSubmit={handleLogin}>
             <h1 className="text-2xl text-teal-500 text-center mb-6  font-bold">login</h1>
